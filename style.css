@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+    height : 100vh;
+    background-color: hsl(217, 28%, 15%);
+}
+/****** Navbar *************************************************************************************************/
+/****** navbar *************************************************************************************************/
+.navbar .logo{
+    margin-left: 50px;
+}
+@media screen and (max-width:938px){
+    .navbar .logo{
+        font-size: 15%;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:938px){
+    .logo img{
+        width: 70%;
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-right: 5%;
+}
+
+.nav-links{
+    float: right;
+}
+ul{
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+    margin-left: 20px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width:938px){
+    .nav-links a{
+        font-size: 10px;
+    }
+
+}
+/****** Background image and text *************************************************************************************************/
+/****** Background image and text *************************************************************************************************/
+.first-page {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.background-image{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+.content-page h1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.content-page p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+.btn{
+    margin-top: 5px;
+    width: 180px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    height: 33px;
+    background-color: hsl(198, 60%, 50%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+/**
+.bg-curvy{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: -100px;
+    z-index: -1;
+}*/
+/****** Features offer *************************************************************************************************/
+/****** Features offer *************************************************************************************************/
+.features {
+    display: grid;
+    height: 60vh;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 94px 150px;
+    margin: 500px 0;
+    margin-top: 5%;
+}
+
+@media screen and (max-width:938px){
+    .features{
+        display: block;
+        padding: 100px 80px;
+    }
+}
+.feature {
+    text-align: center;
+  }
+  
+.feature h3 {
+    margin: 25px 0 12px 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.feature p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+/****** description *************************************************************************************************/
+/****** description *************************************************************************************************/
+.description{
+    padding: 120px 10%;
+    display: flex;
+    margin-top: -15%;
+}
+@media screen and (max-width:360px){
+    .description{
+        margin-top: 20%;
+     
+    }
+}
+@media screen and (max-width:938px){
+    .image-description img{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+        margin-top: -20%;
+    }
+    .description{
+        display: block;
+    }
+}
+.description-text{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.description-text h2{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+.description-text p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+.see-how span{
+    color: white;
+}
+/****** cards *************************************************************************************************/
+/****** cards *************************************************************************************************/
+.cards-comment{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15%;
+    grid-gap: 1rem;
+}
+@media screen and (max-width:938px){
+    .cards-comment{
+        display: block;
+        margin: 0 auto;
+    }
+    .card{
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width : 300px;
+    }
+}
+.card{
+    background-color: hsl(219, 30%, 18%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    color: white;
+}
+.card p{
+    font-family: 'Open Sans', sans-serif;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 1rem;
+    margin-right: 70px;
+
+}
+  
+.text-container h2{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+  
+.text-container p{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 8px;
+}
+.image-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    margin-right: 33%;
+  }
+.image-card img{
+    border-radius: 50%;
+    width: 20px;
+    margin-top: 5px;
+}
+/****** email-sign-up *************************************************************************************************/
+/****** email-sign-up *************************************************************************************************/
+
+.email-sign-up{
+    background-color: hsl(219, 36%, 19%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 700px;
+    padding: 45px 50px;
+    border-radius: 10px;
+}
+@media screen and (max-width:938px){
+    .email-sign-up{
+        width: 450px;
+    }
+    .email-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .email-input button{
+        margin-top : 15px;
+        width: 95%;
+        height : 45px;
+        margin-right : 15px;
+    }
+}
+@media screen and (max-width:490px){
+    .email-sign-up{
+        width: 250px;
+    }
+    .email-input{
+        display: block;
+        flex-direction: column;
+        width: 130%;
+        justify-content: center;
+        align-items: center;
+    }
+    .email-input button{
+        margin-top : 15px;
+        height : 45px;
+    }
+    .custom-input{
+        width: 300px !important;
+    }
+}
+.paragraph-h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.paragraph-h2 h2{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+.paragraph-h2 p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.email-input{
+    display: flex;
+    margin-top: 20px;
+}
+input[type="email"]{
+    margin-right: 15px;
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+}
+.email-input input[type="email"]::placeholder{
+    text-indent: 25px;
+}
+.email-input button{
+    border-radius: 25px;
+    border: none;
+    background: hsl(198, 60%, 50%);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    height: 50%;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+.bottom-footer{
+    font-size: 15%;
+    color: white;
+    margin-top: -10%;
+}
+.footer-element {
+    display: flex;
+}
+.location-paragraph img{
+    margin-right: 15px;
+}
+.footer-element .location-paragraph{
+    padding: 60px 80px;
+    margin-top: 100px;
+    display: flex;
+}
+.location-paragraph p{
+    font-size: 15px;
+    width: 150px;
+}
